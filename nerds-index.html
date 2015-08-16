@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nerds</title>
+        <meta charset="utf-8">
+        <link href="nerds-index.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,500&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="http://api-maps.yandex.ru/2.1/?load=package.standard&amp;lang=ru-RU" type="text/javascript"></script>
+        <script type="text/javascript">
+            var myMap;
+            ymaps.ready(init);
+            function init () {
+                myMap = new ymaps.Map('map', {
+                    center:[45.04369, 38.94274], 
+                    zoom:18,
+                    behaviors: ['default'],
+                    controls: []
+                });
+                myPlacemark = new ymaps.Placemark([45.043323, 38.94424], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/marker.png',
+                    iconImageSize: [231, 190],
+                    iconImageOffset: [-40, -200]
+                });
+                myMap.geoObjects.add(myPlacemark);
+            }
+        </script>
+    </head>
+    <body> 
+        
+            <div class="header">
+                
+                <div class="center-wrapper">
+                    <div class="header-top clearfix">
+                        <div class="logo-head">
+                            <a href="#"><img src="img/logo.png" alt="Nerd's"></a>
+                        </div>
+                        <div class="basket">
+                            <a href="#">Корзина</a>
+                        </div>    
+                        <ul class="top-menu">
+                            <li><a class="active" href="#">Студия</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="nerds-catalog.html">Магазин</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+
+                    </div>    
+                    <div class="slider">
+                        <input type="radio" id="btn-1" name="toggle" checked>
+                        <input type="radio" id="btn-2" name="toggle">
+                        <input type="radio" id="btn-3" name="toggle">
+                        <div class="slider-controls">
+                            <label for="btn-1"></label>
+                            <label for="btn-2"></label>
+                            <label for="btn-3"></label>
+                        </div>
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="slide-text">
+                                    <div class="slide-title">Долго, дорого, скрупулезно</div>
+                                    <p>Математически выверенный дизайн<br>
+            для вашего сайта или мобильного приложения.</p>
+                                    <a class="btn btn-head red" href="#">Узнать больше</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-text">
+                                    <div class="slide-title">Любите ли вы математику,
+как любим ее мы?</div>
+                                    <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+за креатив, чтобы дать им возможность все просчитать.</p>
+                                    <a class="btn btn-head red" href="#">Узнать больше</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-text">
+                                    <div class="slide-title">Только наркотики,
+только хардкор!</div>
+                                    <p>Все дизайнерские решения в нашей компании принимаются<br> только под воздействием качественных галлюциногенов.</p>
+                                    <a class="btn btn-head red" href="#">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                
+            </div>
+            <div class="center-wrapper">
+                <div class="features clearfix">
+                    <div class="features-block">
+                        <div class="features-img">
+                            <a href="#"><img src="img/block1.png" alt=""></a>
+                        </div>
+                        <h3>Веб-сайты</h3>
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <a class="btn btn-order red" href="#">Заказать</a>
+                    </div>
+                    <div class="features-block">
+                        <div class="features-img">
+                            <a href=""><img src="img/block2.png" alt=""></a>
+                        </div>
+                        <h3>Приложения</h3>
+                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                        <a class="btn btn-order green" href="#">Заказать</a>
+                    </div>
+                    <div class="features-block">
+                        <div class="features-img">
+                            <a href=""><img src="img/block3.png" alt=""></a>
+                        </div>
+                        <h3>Презентации</h3>
+                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                        <a class="btn btn-order yellow" href="#">Заказать</a>
+                    </div>
+                    
+                </div>
+                <div class="second-part">
+                <div class="features text clearfix">
+                    <div class="section-left">
+                        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+                    </div>
+                    <div class="section-right">
+                        <div class="logo-main">
+                            <a href=""><img src="img/logo-big.png" alt=""></a>
+                        </div>
+                        <div class="logo-text">
+                            <h4><span>Since 2004</span></h4>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="features text clearfix">
+                    <div class="section-left">
+                        <h4>Выполняем заказы на разработку:</h4>
+                        <ul>
+                            <li>Веб-сайтов любой сложности</li>
+                            <li>Мобильных приложений для iOS и Android</li>
+                            <li>Слайдшоу и видео для корпоративных презентаций</li>
+                        </ul>
+                    </div>
+                    <div class="section-right">
+                        <h4>Как мы работаем:</h4>
+                        <ul>
+                            <li>С самоотдачей 146%</li>
+                            <li>Соблюдая сроки на 100%</li>
+                            <li>По предоплате 50%</li>
+                        </ul>
+                    </div>
+                </div> 
+                </div> 
+                
+                <div class="section-logos">
+                    <div class="logos-block">
+                        <a href=""><img src="img/logos1-100.png" alt=""></a>
+                    </div>
+                    <div class="logos-block">
+                        <a href=""><img src="img/logos2-100.png" alt=""></a>
+                    </div>
+                    <div class="logos-block">
+                        <a href=""><img src="img/logos3-100.png" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+                
+                <div class="footer-map"> 
+                    <div id="map"></div>
+                    <div class="center-wrapper">    
+                    <div class="footer-adr">
+                        <div class="contacts">
+                            <p><b>NЁRDS</b> DESIGN STUDIO</p>
+                            <p>350000, Краснодар, ул.Головатого, 100</p>
+                            <p>тел. +7(861)275-75-75</p>
+                        </div>
+                        <a href="" class="btn btn-post red">Напишите нам</a>
+                    </div>
+                    </div>    
+                </div>   
+                    
+                <div class="center-wrapper clearfix">    
+                    <div class="social-btn-block clearfix">
+                        <a href="http://vk.com" class="btn-social btn-social-vk">
+                            
+                        </a>
+                        <a href="http://facebook.com" class="btn-social btn-social-fb">
+                            
+                        </a>
+                        <a href="http://instagram.com" class="btn-social btn-social-inst">
+                            
+                        </a>
+                    </div>
+                    <div class="footer-title">
+                        <h2>Давайте дружить, это выгодно!</h2>
+                        <p class="footer-title-text">Скидка 10% для друзей из социальных сетей.</p>
+                    </div>
+                </div>    
+            
+        </div>
+    </body>
+</html>
